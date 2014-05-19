@@ -21,7 +21,7 @@ directoryApp.config(function($routeProvider){
 				  })
 		.otherwise( { redirectTo: '/' } );
 });
-}
+
 function CategoriesController($scope){
 			$scope.categories =[{ name:'Acomodacao' },
 								{ name:'Bancos' },
@@ -32,4 +32,15 @@ function CategoriesController($scope){
 								{ name:'Restaurantes' }
 							   ];
 }
+function BusinessesController($scope){
+			$scope.businesses =[{ name:'Unitel' },
+								{ name:'88mph' },
+								{ name:'Pick n Pay' },
+								{ name:'Samsung' },
+								{ name:'Groote Schuur' },
+								{ name:'Engen' },
+								{ name:'McDonalds' }
+							   ];
+}
 directoryApp.controller('CategoriesController', CategoriesController);
+directoryApp.controller('BusinessesController', BusinessesController);
