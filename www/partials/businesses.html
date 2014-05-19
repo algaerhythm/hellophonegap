@@ -1,0 +1,18 @@
+<div class="container">
+	<div class="topcoat-list" data-ng-controller="CategoriesController">
+		<div class="topcoat-list__header">
+			<h1>Businesses
+				<input type="text" placeholder="Pesquisa"
+					   class="topcoat-search-input pull-right"
+					   data-ng-model="name"
+					   align="right" />
+			</h1>
+		</div>
+		<ul class="topcoat-list__container">
+			<li class="topcoat-list__item"
+			  data-ng-repeat="cat in categories | filter:name">
+			  {{ cat.name | uppercase }}
+			</li>
+		</ul>
+	</div>
+</div>
